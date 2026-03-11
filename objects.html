@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objects-collection of keys and its values
+        let student ={
+            name:"john",
+            age:23,
+            isMarried:false,
+            address:{
+                city:"ghaziabad",
+                pinCode:201009,
+                streetNo:23,
+                area:"indirapuram",
+            },
+            education:["10th","12th","Btech"],
+            degree:"Btech",
+            branch:"CSE",
+            year:2025,
+            getInfo:function(){
+                return "my current eduction is" + student.degree;
+            }
+        };
+        //access object keys
+        console.log(student.education[2]);
+        console.log(typeof(student));
+        console.log(student.getInfo());
+
+        //find keys in objects
+        console.log('name ' in student);
+        console.log(delete student.name);
+        
+        for(let i=0;i<keys.length;i++){
+            console.log(student[keylength[i]]);
+        }
+
+        let myInfo=new object();
+        myinfo.name="sanvi";
+        myInfo.age=19;
+        myInfo.address="GZB";
+
+        
+    </script>
+</body>
+</html>
